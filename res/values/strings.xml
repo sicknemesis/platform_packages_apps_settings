@@ -6967,4 +6967,10 @@
     <string name="gcc_android">Rom Toolchain</string>
     <string name="gcc_android_default">Unknown</string>
 
+    <!-- Wakeup section under Display settings -->
+    <string name="wakeup_section_header">Wake up</string>
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
 </resources>
