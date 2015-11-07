@@ -16,6 +16,8 @@
 
 package com.android.settings.notificationlight;
 
+import com.android.internal.logging.MetricsLogger;
+
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -43,6 +45,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ApplicationLightPreference mMediumColorPref;
     private ApplicationLightPreference mFullColorPref;
     private static final int MENU_RESET = Menu.FIRST;
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.APPLICATION;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
